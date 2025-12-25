@@ -29,13 +29,13 @@ with col4:
 filtered_df = df.copy()
 
 if prospect_name:
-    filtered_df = filtered_df[filtered_df['ProspectName'].astype(str).str.contains(prospect_name, case=False, na=False)]
+    filtered_df = filtered_df[filtered_df['ProspectName'].str.contains(prospect_name, case=False, na=False)]
 if mobile_number:
     filtered_df = filtered_df[filtered_df['MobileNumber'].astype(str).str.contains(mobile_number, case=False, na=False)]
 if email:
-    filtered_df = filtered_df[filtered_df['Email'].astype(str).str.contains(email, case=False, na=False)]
+    filtered_df = filtered_df[filtered_df['Email'].str.contains(email, case=False, na=False)]
 if file_name:
-    filtered_df = filtered_df[filtered_df['FileName'].astype(str).str.contains(file_name, case=False, na=False)]
+    filtered_df = filtered_df[filtered_df['FileName'].str.contains(file_name, case=False, na=False)]
 
 # Pagination settings
 st.subheader("Pagination")
