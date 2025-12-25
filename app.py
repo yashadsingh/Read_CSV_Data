@@ -5,7 +5,7 @@ import pandas as pd
 st.title("Prospect Leads Viewer")
 
 # Load CSV from file path
-file_path = "LeadsCSVMagalaytan.csv"  # CSV file in the same directory
+file_path = "Leads_20251225.csv"  # CSV file in the same directory
 df = pd.read_csv(file_path)
 
 # Clean column names
